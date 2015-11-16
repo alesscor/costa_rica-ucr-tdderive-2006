@@ -83,3 +83,16 @@ Tareas por hacer:
 - Brindarle  al  servidor  `tdderive` una  máquina  de  inferencias  clara  y flexible que sea usada por el componente  `planificador` en su toma de decisiones.
 - Proveer a `tdderive` de un lenguaje que permita definir de manera fácil y flexible cómo debe hacerse la división de trabajos de cualquier aplicación y cómo debe hacerse la unión de las respuestas.
 - Implementar  en  `tdderive` la  devolución  asincrónica  de  resultados,  por ejemplo mediante correo electrónico, notificación de  RSS o mediante una simple consulta al servidor, con una clave de acceso.
+
+
+## Sobre `dderive`
+
+El  principal  objetivo  del  programa `dderive`, cuyo autor es Ronald Argüello Venegas, es  demostrar  cómo  se  puede utilizar  la  teoría  matemática  de  la  determinación  para  generar,  de  manera incremental,  árboles  de  decisión  a  partir  de  grandes  colecciones  de  datos dispuestos tabularmente, favoreciéndose  del múltiple procesamiento.  Desde una perspectiva más práctica, `dderive` se encarga de descubrir patrones que guíen  la  toma  de  decisiones  a  partir  de  grandes  cantidades  de  datos;  esta responsabilidad  es  parte  de  todo  un  proceso  de  descubrimiento  de conocimiento.
+
+El usuario final encuentra en `dderive` las siguientes funciones:
+- Generación  de  un  árbol  de  inducción  al  emplear  una  de  varias estrategias  para  la  selección  del  mejor  atributo:  la  determinación  de primer y segundo orden, la entropía y el índice gini.
+- Información sobre el uso de `dderive`.
+- Generación  de  un  árbol  a  partir  de  un  proceso  que  organice  el multiprocesamiento.
+- Agregación  de  procesos  de  generación  de  árboles  para  el multiprocesamiento local.
+
+Las  dos  últimas  opciones,  de  bajo  nivel,  se  necesitan  para  que  un  usuario logre  el  múltiple  procesamiento.  Si  el  usuario  requiere  que  el  múltiple procesamiento se realice en más de una computadora, éste necesita verificar si  los  datos  están  al  alcance  de  las  computadoras  participantes,  además  de agregar  los  procesos  computacionales  de  generación  que  desee  en  cada computadora.
