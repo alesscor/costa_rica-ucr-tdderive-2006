@@ -5,6 +5,8 @@ Este es el código fuente del desarrollo inicial de un sistema  distribuido débil
 Palabras clave: *middleware*, concurrencia, planificación, sistemas distribuidos, arquitectura de software, lenguaje de programación *java*
 
 
+## Detalles técnicos
+
 Objetivos:
 
 * Facilitar  el  procesamiento  distribuido  y  paralelo  a  aplicaciones  de comportamiento  incremental  sobre  un  ambiente  débilmente  acoplado  y heterogéneo, dentro de una red de área local o de área extensa.
@@ -90,7 +92,7 @@ Tareas por hacer:
 - Implementar  en  `tdderive` la  devolución  asincrónica  de  resultados,  por ejemplo mediante correo electrónico, notificación de  RSS o mediante una simple consulta al servidor, con una clave de acceso.
 
 
-## Sobre `dderive`
+## El programa `dderive`
 
 El  principal  objetivo  del  programa `dderive`, cuyo autor es Ronald Argüello Venegas, es  demostrar  cómo  se  puede utilizar  la  teoría  matemática  de  la  determinación  para  generar,  de  manera incremental,  árboles  de  decisión  a  partir  de  grandes  colecciones  de  datos dispuestos tabularmente, favoreciéndose  del múltiple procesamiento.  Desde una perspectiva más práctica, `dderive` se encarga de descubrir patrones que guíen  la  toma  de  decisiones  a  partir  de  grandes  cantidades  de  datos;  esta responsabilidad  es  parte  de  todo  un  proceso  de  descubrimiento  de conocimiento.
 
