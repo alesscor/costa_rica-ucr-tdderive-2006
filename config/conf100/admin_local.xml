@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<valores_locales>
+  <alias_local>td.1</alias_local>
+  <tdderive_base>
+    <!--Ubicacion de la base de datos, su controlador y otros.-->
+    <bd_controlador>org.hsqldb.jdbcDriver</bd_controlador>
+    <bd_url>jdbc:hsqldb:C:/MyProjects/eclipse/running/rnn001/info/adminbd</bd_url>
+    <!--La ruta base es la del paquete-->
+    <script_inibd_url>C:/MyProjects/eclipse/config/create_db.txt</script_inibd_url>
+    <script_finbd_url>C:/MyProjects/eclipse/config/destroy_db.txt</script_finbd_url>
+    <!--Esta es la ruta en donde se guardan los archivos de trabajo-->
+    <raiz_tdderive>C:/MyProjects/eclipse/running/rnn001</raiz_tdderive>
+  </tdderive_base>
+  <tdderive_bajonivel>
+    <!--Esta es la velocidad del reloj del microprocesador en MHz-->
+    <relojMHz>400</relojMHz>
+    <tipoBuses>BUSES_PC</tipoBuses>
+    <!--Segundos antes que el lector realize la próxima lectura.-->
+    <cantMicrop>1</cantMicrop>
+  </tdderive_bajonivel>
+  <programas>
+    <programa>
+      <alias>notepad</alias>
+      <nombre_aplicacion>Block de notas</nombre_aplicacion>
+      <ruta>c:\windows\notepad.exe</ruta>
+      <clase></clase>
+      <divisora></divisora>
+      <unificadora></unificadora>
+      <tiempo_ensistema>2100000</tiempo_ensistema>
+      <periodo_confirmacion>2100000</periodo_confirmacion>
+      <umbral_espera>2100000</umbral_espera>
+      <si_cambiarcompu>false</si_cambiarcompu>
+    </programa>
+    <programa>
+      <alias>explorer</alias>
+      <nombre_aplicacion>Explorador de Windows</nombre_aplicacion>
+      <ruta>c:\windows\explorer.exe</ruta>
+      <clase>(ninguna)</clase>
+      <divisora></divisora>
+      <unificadora></unificadora>
+      <tiempo_ensistema>2100000</tiempo_ensistema>
+      <periodo_confirmacion>2100000</periodo_confirmacion>
+      <umbral_espera>2100000</umbral_espera>
+      <si_cambiarcompu>true</si_cambiarcompu>
+    </programa>
+    <programa>
+      <alias>dderive</alias>
+      <nombre_aplicacion>Derivacion de arboles de induccion</nombre_aplicacion>
+      <ruta>C:/scripts/dderive.exe</ruta>
+      <clase>mineria.MINERControlador</clase>
+      <divisora>mineria.MINERDivisoras</divisora>
+      <unificadora>mineria.MINERUnificadoras</unificadora>
+      <tiempo_ensistema>2100000</tiempo_ensistema>
+      <periodo_confirmacion>2100000</periodo_confirmacion>
+      <umbral_espera>2100000</umbral_espera>
+      <si_cambiarcompu>true</si_cambiarcompu>
+    </programa>
+  </programas>
+</valores_locales>

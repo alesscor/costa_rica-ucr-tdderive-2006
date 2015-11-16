@@ -1,0 +1,3 @@
+# formato: host port tipo_socket
+# tipo_socket: 1: stream, 2: dgram
+192.168.0.4 8900 1

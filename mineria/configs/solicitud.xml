@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<solicitud>
+  <sol>
+    <alias>notepad</alias>
+    <parametros>algo.txt</parametros>
+    <retorno>alesscor@ieee.org</retorno>
+    <rutas_salida>resultadado</rutas_salida>
+    <rutas_entrada>entrada</rutas_entrada>
+    <archivos>
+      <archivo1>nombre1<si_local>true</si_local></archivo1>
+      <archivo2>nombre2</archivo2>
+      <archivo3>nombre3<bloque>nombre3</bloque></archivo3>
+      <archivo4>nombre3<bloque>nombre4</bloque></archivo4>
+      <archivo5>nombre3<bloque>nombre5</bloque></archivo5>
+      <archivo6>nombre6<si_local>true</si_local></archivo6>
+    </archivos>
+  </sol>
+</solicitud>

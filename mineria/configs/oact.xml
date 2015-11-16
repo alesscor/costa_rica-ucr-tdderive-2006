@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<aplicacion>
+<iniciador>
+<puerto>5120</puerto>
+<intervalo>100000</intervalo>
+<destino_omision>192.168.0.1</destino_omision>
+</iniciador>
+</aplicacion>

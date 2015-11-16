@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<programas>
+  <programa>
+    <alias>notepad</alias>
+    <nombre_aplicacion>Block de notas</nombre_aplicacion>
+    <ruta>c:\windows\notepad.exe</ruta>
+    <clase></clase>
+    <tiempo_ensistema>2100000</tiempo_ensistema>
+    <periodo_confirmacion>2100000</periodo_confirmacion>
+    <umbral_espera>2100000</umbral_espera>
+    <si_cambiarcompu>false</si_cambiarcompu>
+  </programa>
+  <programa>
+    <alias>explorer</alias>
+    <nombre_aplicacion>Explorador de Windows</nombre_aplicacion>
+    <ruta>c:\windows\explorer.exe</ruta>
+    <clase>(ninguna)</clase>
+    <tiempo_ensistema>2100000</tiempo_ensistema>
+    <periodo_confirmacion>2100000</periodo_confirmacion>
+    <umbral_espera>2100000</umbral_espera>
+    <si_cambiarcompu>true</si_cambiarcompu>
+  </programa>
+  <programa>
+    <alias>dderive</alias>
+    <nombre_aplicacion>Derivacion de arboles de induccion</nombre_aplicacion>
+    <ruta>c:\scripts\dderive.exe</ruta>
+    <clase>mineria.MINERControlador</clase>
+    <tiempo_ensistema>2100000</tiempo_ensistema>
+    <periodo_confirmacion>2100000</periodo_confirmacion>
+    <umbral_espera>2100000</umbral_espera>
+    <si_cambiarcompu>true</si_cambiarcompu>
+  </programa>
+</programas>

@@ -1,0 +1,299 @@
+04/12/2006;00:02:28.812;(td.6(despachador));recibe solicitud tarea: (dderive) td.60000000001
+04/12/2006;00:02:29.906;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000001:0000000001
+04/12/2006;00:02:29.937;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000001:0000000003
+04/12/2006;00:02:29.937;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000001:0000000002
+04/12/2006;00:02:29.953;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000001:0000000004
+04/12/2006;00:02:29.953;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000001:0000000005
+04/12/2006;00:02:29.953;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000001:0000000006
+04/12/2006;00:02:30.000;(td.6(despachador));almacena conexión: td.60000000001
+04/12/2006;00:03:33.890;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:03:33.906;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:03:33.921;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:03:33.937;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:03:33.953;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:03:33.984;(td.7(lector));activa planificación
+04/12/2006;00:03:34.000;(td.6(lector));activa planificación
+04/12/2006;00:03:34.109;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:03:34.421;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:03:34.421;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:03:34.421;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:03:34.437;(td.1(lector));activa planificación
+04/12/2006;00:03:34.437;(td.6(planificador));exporta hacia: td.1 subtrabajo: td.60000000001:0000000006
+04/12/2006;00:03:34.453;(td.6(planificador));exporta hacia: td.7 subtrabajo: td.60000000001:0000000003
+04/12/2006;00:03:34.453;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:03:34.484;(td.6(planificador));exporta hacia: td.1 subtrabajo: td.60000000001:0000000001
+04/12/2006;00:03:34.484;(td.6(planificador));exporta hacia: td.7 subtrabajo: td.60000000001:0000000002
+04/12/2006;00:03:34.484;(td.6(planificador));ejecuta subtrabajo: td.60000000001:0000000005
+04/12/2006;00:03:34.484;(td.1(despachador));recibe subtrabajo a planificar: td.60000000001:0000000006
+04/12/2006;00:03:34.500;(td.6(planificador));ejecuta subtrabajo: td.60000000001:0000000004
+04/12/2006;00:03:34.515;(td.7(despachador));recibe subtrabajo a planificar: td.60000000001:0000000002
+04/12/2006;00:03:34.515;(td.1(despachador));recibe subtrabajo a planificar: td.60000000001:0000000001
+04/12/2006;00:03:34.515;(td.7(despachador));recibe subtrabajo a planificar: td.60000000001:0000000003
+04/12/2006;00:05:33.875;(td.6(lector));activa planificación
+04/12/2006;00:05:33.921;(td.7(lector));activa planificación
+04/12/2006;00:05:33.937;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:05:34.000;(td.1(lector));activa planificación
+04/12/2006;00:05:34.015;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:05:34.015;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:05:34.031;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:05:34.031;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:05:34.109;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:05:34.109;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:05:34.125;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:05:34.125;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:05:34.140;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:05:34.171;(td.7(planificador));exporta hacia: td.6 subtrabajo: td.60000000001:0000000003
+04/12/2006;00:05:34.171;(td.6(despachador));recibe subtrabajo a planificarr: td.60000000001:0000000003
+04/12/2006;00:05:34.171;(td.1(planificador));ejecuta subtrabajo: td.60000000001:0000000006
+04/12/2006;00:05:34.296;(td.6(despachador));recibe subtrabajo terminado: td.60000000001:0000000006
+04/12/2006;00:07:33.937;(td.1(lector));activa planificación
+04/12/2006;00:07:33.953;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:07:34.000;(td.7(lector));activa planificación
+04/12/2006;00:07:34.031;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:07:34.062;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:07:34.078;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:07:34.093;(td.7(planificador));ejecuta subtrabajo: td.60000000001:0000000002
+04/12/2006;00:07:34.125;(td.1(planificador));ejecuta subtrabajo: td.60000000001:0000000001
+04/12/2006;00:07:34.125;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:07:34.156;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:07:34.187;(td.6(lector));activa planificación
+04/12/2006;00:07:34.203;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:07:34.203;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:07:34.203;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:07:34.203;(td.6(planificador));ejecuta subtrabajo: td.60000000001:0000000003
+04/12/2006;00:07:34.250;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:07:34.296;(td.6(despachador));recibe subtrabajo terminado: td.60000000001:0000000002
+04/12/2006;00:07:34.453;(td.6(despachador));recibe subtrabajo terminado: td.60000000001:0000000001
+04/12/2006;00:09:33.828;(td.6(lector));activa planificación
+04/12/2006;00:09:33.859;(td.1(lector));activa planificación
+04/12/2006;00:09:33.875;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:09:33.875;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:09:33.875;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:09:33.890;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:09:33.906;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:09:33.921;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:09:33.937;(td.7(lector));activa planificación
+04/12/2006;00:09:33.953;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:09:33.984;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:09:34.000;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:09:34.000;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:09:34.031;(td.6(controlador));une subtrabajos: td.60000000001
+04/12/2006;00:09:34.031;(td.6(controlador));desalmacena conexión: td.60000000001
+04/12/2006;00:09:36.031;(td.6(controlador));termina y devuelve archivo de salida: td.60000000001
+04/12/2006;00:11:33.843;(td.7(lector));activa planificación
+04/12/2006;00:11:33.875;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:11:33.906;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:11:33.906;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:11:33.906;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:11:33.937;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:11:33.968;(td.1(lector));activa planificación
+04/12/2006;00:11:33.984;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:11:33.984;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:11:33.984;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:11:34.000;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:11:34.000;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:11:34.000;(td.6(lector));activa planificación
+04/12/2006;00:12:27.843;(td.6(despachador));recibe solicitud tarea: (dderive) td.60000000002
+04/12/2006;00:12:28.390;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000002:0000000001
+04/12/2006;00:12:28.390;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000002:0000000002
+04/12/2006;00:12:28.421;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000002:0000000003
+04/12/2006;00:12:28.421;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000002:0000000004
+04/12/2006;00:12:28.421;(td.6(despachador));almacena conexión: td.60000000002
+04/12/2006;00:12:28.421;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000002:0000000005
+04/12/2006;00:12:28.421;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000002:0000000006
+04/12/2006;00:12:31.734;(td.6(despachador));recibe solicitud tarea: (dderive) td.60000000003
+04/12/2006;00:12:32.234;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000003:0000000001
+04/12/2006;00:12:32.265;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000003:0000000003
+04/12/2006;00:12:32.265;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000003:0000000002
+04/12/2006;00:12:32.265;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000003:0000000004
+04/12/2006;00:12:32.265;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000003:0000000005
+04/12/2006;00:12:32.265;(td.6(controlador));divide y obtiene nuevo subtrabajo: td.60000000003:0000000006
+04/12/2006;00:12:32.281;(td.6(despachador));almacena conexión: td.60000000003
+04/12/2006;00:12:43.640;(td.1(despachador));recibe solicitud tarea: (dderive) td.10000000001
+04/12/2006;00:13:33.906;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:13:33.921;(td.1(lector));activa planificación
+04/12/2006;00:13:33.968;(td.7(lector));activa planificación
+04/12/2006;00:13:33.968;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:13:34.078;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:13:34.187;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:13:34.203;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:13:34.218;(td.1(controlador));une subtrabajos: td.10000000001
+04/12/2006;00:13:34.265;(td.1(controlador));erra compresión de resultado: td.10000000001
+04/12/2006;00:13:34.375;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:13:34.500;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:13:34.578;(td.6(planificador));exporta hacia: td.1 subtrabajo: td.60000000003:0000000005
+04/12/2006;00:13:34.609;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:13:34.656;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:13:34.718;(td.6(planificador));exporta hacia: td.1 subtrabajo: td.60000000002:0000000005
+04/12/2006;00:13:34.734;(td.6(lector));activa planificación
+04/12/2006;00:13:34.765;(td.6(planificador));exporta hacia: td.1 subtrabajo: td.60000000003:0000000002
+04/12/2006;00:13:34.812;(td.6(planificador));exporta hacia: td.1 subtrabajo: td.60000000002:0000000003
+04/12/2006;00:13:34.828;(td.6(planificador));exporta hacia: td.7 subtrabajo: td.60000000003:0000000004
+04/12/2006;00:13:34.843;(td.6(planificador));exporta hacia: td.7 subtrabajo: td.60000000002:0000000002
+04/12/2006;00:13:34.859;(td.6(planificador));exporta hacia: td.7 subtrabajo: td.60000000003:0000000001
+04/12/2006;00:13:34.937;(td.6(planificador));ejecuta subtrabajo: td.60000000003:0000000006
+04/12/2006;00:13:34.984;(td.6(planificador));exporta hacia: td.7 subtrabajo: td.60000000002:0000000004
+04/12/2006;00:13:35.015;(td.6(planificador));ejecuta subtrabajo: td.60000000002:0000000001
+04/12/2006;00:13:35.046;(td.7(despachador));recibe subtrabajo a planificar: td.60000000002:0000000002
+04/12/2006;00:13:35.125;(td.1(despachador));recibe subtrabajo a planificar: td.60000000002:0000000003
+04/12/2006;00:13:35.140;(td.1(despachador));recibe subtrabajo a planificar: td.60000000003:0000000005
+04/12/2006;00:13:35.171;(td.1(despachador));recibe subtrabajo a planificar: td.60000000002:0000000005
+04/12/2006;00:13:35.187;(td.1(despachador));recibe subtrabajo a planificar: td.60000000003:0000000002
+04/12/2006;00:13:35.250;(td.7(despachador));recibe subtrabajo a planificar: td.60000000003:0000000001
+04/12/2006;00:13:35.312;(td.7(despachador));recibe subtrabajo a planificar: td.60000000003:0000000004
+04/12/2006;00:13:35.375;(td.7(despachador));recibe subtrabajo a planificar: td.60000000002:0000000004
+04/12/2006;00:13:35.390;(td.6(planificador));ejecuta subtrabajo: td.60000000003:0000000003
+04/12/2006;00:13:35.421;(td.6(planificador));ejecuta subtrabajo: td.60000000002:0000000006
+04/12/2006;00:14:25.890;(td.1(controlador));divide y obtiene nuevo subtrabajo: td.10000000001:0000000001
+04/12/2006;00:14:25.890;(td.1(controlador));divide y obtiene nuevo subtrabajo: td.10000000001:0000000002
+04/12/2006;00:14:25.906;(td.1(controlador));divide y obtiene nuevo subtrabajo: td.10000000001:0000000003
+04/12/2006;00:14:25.937;(td.1(despachador));almacena conexión: td.10000000001
+04/12/2006;00:15:33.828;(td.7(lector));activa planificación
+04/12/2006;00:15:33.906;(td.1(lector));activa planificación
+04/12/2006;00:15:33.968;(td.6(lector));activa planificación
+04/12/2006;00:15:34.000;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:15:34.046;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:15:34.046;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:15:34.062;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:15:34.078;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:15:34.093;(td.1(planificador));exporta hacia: td.6 subtrabajo: td.10000000001:0000000002
+04/12/2006;00:15:34.093;(td.1(planificador));exporta hacia: td.6 subtrabajo: td.60000000003:0000000005
+04/12/2006;00:15:34.093;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:15:34.093;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:15:34.125;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:15:34.171;(td.1(planificador));ejecuta subtrabajo: td.60000000003:0000000002
+04/12/2006;00:15:34.171;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:15:34.234;(td.7(planificador));exporta hacia: td.6 subtrabajo: td.60000000002:0000000002
+04/12/2006;00:15:34.234;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:15:34.250;(td.7(planificador));ejecuta subtrabajo: td.60000000002:0000000004
+04/12/2006;00:15:34.265;(td.1(planificador));exporta hacia: td.6 subtrabajo: td.60000000002:0000000005
+04/12/2006;00:15:34.281;(td.1(planificador));ejecuta subtrabajo: td.10000000001:0000000003
+04/12/2006;00:15:34.281;(td.1(planificador));ejecuta subtrabajo: td.10000000001:0000000001
+04/12/2006;00:15:34.359;(td.6(despachador));recibe subtrabajo a planificarr: td.60000000002:0000000005
+04/12/2006;00:15:34.375;(td.6(despachador));recibe subtrabajo a planificarr: td.60000000003:0000000005
+04/12/2006;00:15:34.406;(td.6(despachador));recibe subtrabajo a planificarr: td.60000000002:0000000002
+04/12/2006;00:15:34.406;(td.6(despachador));recibe subtrabajo a planificar: td.10000000001:0000000002
+04/12/2006;00:15:34.453;(td.1(planificador));ejecuta subtrabajo: td.60000000002:0000000003
+04/12/2006;00:15:34.656;(td.6(despachador));recibe subtrabajo terminado: td.60000000002:0000000004
+04/12/2006;00:17:33.859;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:17:33.921;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:17:33.937;(td.6(lector));activa planificación
+04/12/2006;00:17:34.015;(td.7(lector));activa planificación
+04/12/2006;00:17:34.062;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:17:34.109;(td.1(lector));activa planificación
+04/12/2006;00:17:34.140;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:17:34.156;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:17:34.171;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:17:34.187;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:17:34.203;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:17:34.218;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:17:34.234;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:17:34.234;(td.6(planificador));exporta hacia: td.1 subtrabajo: td.60000000002:0000000002
+04/12/2006;00:17:34.265;(td.6(planificador));ejecuta subtrabajo: td.60000000002:0000000005
+04/12/2006;00:17:34.265;(td.6(planificador));exporta hacia: td.7 subtrabajo: td.60000000003:0000000005
+04/12/2006;00:17:34.281;(td.1(despachador));recibe subtrabajo a planificar: td.60000000002:0000000002
+04/12/2006;00:17:34.312;(td.6(despachador));recibe subtrabajo terminado: td.60000000002:0000000003
+04/12/2006;00:17:34.312;(td.7(despachador));recibe subtrabajo a planificar: td.60000000003:0000000005
+04/12/2006;00:17:34.359;(td.6(despachador));recibe subtrabajo terminado: td.60000000003:0000000002
+04/12/2006;00:19:33.906;(td.1(lector));activa planificación
+04/12/2006;00:19:33.906;(td.6(lector));activa planificación
+04/12/2006;00:19:33.906;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:19:33.984;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:19:34.000;(td.7(lector));activa planificación
+04/12/2006;00:19:34.015;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:19:34.046;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:19:34.062;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:19:34.078;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:19:34.093;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:19:34.140;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:19:34.140;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:19:34.156;(td.1(planificador));detiene subtrabajo: td.10000000001:0000000002
+04/12/2006;00:19:34.187;(td.1(planificador));ejecuta subtrabajo: td.60000000002:0000000002
+04/12/2006;00:19:34.203;(td.1(planificador));exporta hacia: td.6 subtrabajo: td.10000000001:0000000002
+04/12/2006;00:19:34.218;(td.6(planificador));detiene subtrabajo: td.60000000003:0000000004
+04/12/2006;00:19:34.234;(td.6(planificador));ejecuta subtrabajo: td.60000000003:0000000004
+04/12/2006;00:19:34.234;(td.6(planificador));detiene subtrabajo: td.60000000003:0000000001
+04/12/2006;00:19:34.234;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:19:34.234;(td.1(despachador));recibe subtrabajo a planificar: td.60000000003:0000000001
+04/12/2006;00:19:34.234;(td.6(planificador));exporta hacia: td.1 subtrabajo: td.60000000003:0000000001
+04/12/2006;00:19:34.265;(td.6(despachador));recibe subtrabajo a planificarr: td.10000000001:0000000002
+04/12/2006;00:21:33.859;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:21:33.859;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:21:33.859;(td.7(lector));activa planificación
+04/12/2006;00:21:33.890;(td.6(lector));activa planificación
+04/12/2006;00:21:33.968;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:21:33.984;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:21:33.984;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:21:34.031;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:21:34.031;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:21:34.062;(td.1(lector));activa planificación
+04/12/2006;00:21:34.062;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:21:34.078;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:21:34.078;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:21:34.093;(td.6(planificador));detiene subtrabajo: td.60000000003:0000000005
+04/12/2006;00:21:34.093;(td.6(despachador));recibe subtrabajo terminado: td.60000000002:0000000002
+04/12/2006;00:21:34.093;(td.6(planificador));ejecuta subtrabajo: td.60000000003:0000000005
+04/12/2006;00:21:34.156;(td.6(controlador));une subtrabajos: td.60000000002
+04/12/2006;00:21:34.203;(td.6(controlador));desalmacena conexión: td.60000000002
+04/12/2006;00:21:36.203;(td.6(controlador));termina y devuelve archivo de salida: td.60000000002
+04/12/2006;00:23:33.906;(td.7(lector));activa planificación
+04/12/2006;00:23:33.921;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:23:33.921;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:23:33.921;(td.6(lector));activa planificación
+04/12/2006;00:23:33.968;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:23:33.984;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:23:34.000;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:23:34.015;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:23:34.015;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:23:34.031;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:23:34.046;(td.1(planificador));ejecuta subtrabajo: td.10000000001:0000000002
+04/12/2006;00:23:34.046;(td.1(planificador));detiene subtrabajo: td.10000000001:0000000002
+04/12/2006;00:23:34.046;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:23:34.046;(td.1(lector));activa planificación
+04/12/2006;00:23:34.046;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:23:34.109;(td.1(controlador));une subtrabajos: td.10000000001
+04/12/2006;00:23:34.125;(td.1(controlador));desalmacena conexión: td.10000000001
+04/12/2006;00:23:36.109;(td.1(controlador));termina y devuelve archivo de salida: td.10000000001
+04/12/2006;00:25:33.890;(td.7(lector));activa planificación
+04/12/2006;00:25:33.890;(td.6(lector));activa planificación
+04/12/2006;00:25:33.968;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:25:33.968;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:25:33.968;(td.1(lector));activa planificación
+04/12/2006;00:25:33.984;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:25:34.062;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:25:34.078;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:25:34.109;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:25:34.109;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:25:34.109;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:25:34.125;(td.6(planificador));ejecuta subtrabajo: td.60000000003:0000000001
+04/12/2006;00:25:34.125;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:25:34.140;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:25:34.140;(td.6(planificador));detiene subtrabajo: td.60000000003:0000000001
+04/12/2006;00:25:34.265;(td.6(controlador));une subtrabajos: td.60000000003
+04/12/2006;00:25:34.296;(td.6(controlador));desalmacena conexión: td.60000000003
+04/12/2006;00:25:36.281;(td.6(controlador));termina y devuelve archivo de salida: td.60000000003
+04/12/2006;00:27:33.890;(td.7(lector));activa planificación
+04/12/2006;00:27:33.890;(td.6(lector));activa planificación
+04/12/2006;00:27:33.906;(td.7(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:27:33.921;(td.7(planificador));conoce vecino:td.6:190.10.3.230:5120
+04/12/2006;00:27:33.953;(td.6(planificador));conoce vecino:td.7:190.10.3.230:5220
+04/12/2006;00:27:33.953;(td.6(planificador));conoce vecino:td.1:190.10.3.230:4620
+04/12/2006;00:27:33.953;(td.6(planificador));conoce vecino:td.4:190.10.3.230:4920
+04/12/2006;00:27:33.968;(td.6(planificador));conoce vecino:td.5:190.10.3.230:5020
+04/12/2006;00:27:34.000;(td.1(lector));activa planificación
+04/12/2006;00:27:34.000;(td.1(planificador));conoce vecino:td.2:190.10.3.230:4720
+04/12/2006;00:27:34.015;(td.1(planificador));conoce vecino:td.8:190.10.3.230:5320
+04/12/2006;00:27:34.015;(td.1(planificador));conoce vecino:td.3:190.10.3.230:4853
+04/12/2006;00:27:34.031;(td.1(planificador));conoce vecino:td.6:190.10.3.230:5120
+05/12/2006;13:39:53.468;(td.1(programa));inicia inicio
+05/12/2006;13:40:02.937;(td.1(balanceador));puerto:4621
+05/12/2006;13:40:02.937;(td.1(despachador));puerto:4620
+05/12/2006;13:40:02.937;(td.1(programa));termina inicio
+05/12/2006;13:41:17.203;(td.1(programa));inicia inicio
+05/12/2006;13:41:23.890;(td.1(programa));termina inicio
+05/12/2006;13:41:23.890;(td.1(balanceador));puerto:4621
+05/12/2006;13:41:23.890;(td.1(despachador));puerto:4620
+05/12/2006;13:41:42.375;(td.3(programa));inicia inicio
+05/12/2006;13:41:49.109;(td.3(despachador));puerto:4853
+05/12/2006;13:41:49.125;(td.3(programa));termina inicio
+05/12/2006;13:41:49.125;(td.3(balanceador));puerto:4854

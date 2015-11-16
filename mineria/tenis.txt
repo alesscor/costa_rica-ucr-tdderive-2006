@@ -1,0 +1,15 @@
+=Observacion	Vista_exterior	Temperatura	Humedad	Viento	*Jugar_tenis
+1	1	1	1	1	0
+2	1	1	1	2	0
+3	2	1	1	1	1
+4	3	2	1	1	1
+5	3	3	2	1	1
+6	3	3	2	2	0
+7	2	3	2	2	1
+8	1	2	1	1	0
+9	1	3	2	1	1
+10	3	2	2	1	1
+11	1	2	2	2	1
+12	2	2	1	2	1
+13	2	1	2	1	1
+14	3	2	1	2	0

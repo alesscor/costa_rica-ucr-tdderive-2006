@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+
+<acc>
+<config>
+<puerto_bitacora>4412
+</puerto_bitacora>
+<con_bitacora>true
+</con_bitacora>
+</config>
+</acc>

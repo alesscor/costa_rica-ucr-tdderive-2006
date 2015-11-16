@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<bitacora><otro>
+<archivo>.bitacora.nxml</archivo>
+<puerto_ingresos>4412</puerto_ingresos> 
+<puerto_salidas>4413</puerto_salidas>
+<clave>quiero ver</clave>
+<intervalo_flush>10</intervalo_flush>
+</otro>
+</bitacora>

@@ -1,0 +1,378 @@
+rollback;
+set autocommit false;
+set ignorecase true;
+#################################
+#################################
+#################################
+# Sección para protocolos de recup.
+#################################
+#################################
+#################################
+# Archivo que crea la base de datos de
+# la capa ADMIN del sistema distribuido
+# tdderive.
+#################################
+create cached table estado_tablas(
+  si_terminada BIT NOT NULL
+);
+# registro inicial
+insert into estado_tablas (si_terminada) values(false);
+#################################
+create cached table estado_instancia(
+  si_iniciada BIT NOT NULL,
+  si_terminada BIT NOT NULL
+);
+# registro inicial
+insert into estado_instancia (si_iniciada,si_terminada) values(false,false);
+#################################
+#################################
+#################################
+# Sección para balance de carga
+#################################
+#################################
+#################################
+create cached table ubicaciones(
+  nombre CHAR(10) NOT NULL,
+  direccion CHAR(5) NOT NULL,
+  desplaza_puerto NUMERIC(100,0) NOT NULL,
+  si_local BIT NOT NULL
+);
+# indices
+create index ubica01 on ubicaciones (nombre);
+create index ubica02 on ubicaciones (direccion);
+create index ubica03 on ubicaciones (si_local);
+#################################
+create cached table dominios_bal(
+  nombre CHAR(10) NOT NULL,
+  vecino CHAR(10) NOT NULL,
+  peso NUMERIC(20,10),
+  capacidad NUMERIC(20,10),
+  altura NUMERIC(20,10),
+  carga_aplicacion NUMERIC(20,10),
+  ultimo_mensaje NUMERIC(10) DEFAULT 0 NOT NULL
+);
+# indices
+create index doms01 on dominios_bal (nombre);
+create index doms02 on dominios_bal (vecino);
+#################################
+create cached table pesos_umbrales_politicas(
+  id_pesoumbral CHAR(10) NOT NULL,
+  valor NUMERIC(20,10)
+);
+# indices
+create index pesosg1 on pesos_umbrales_politicas (id_pesoumbral);
+# intérvalo de espera para el lector del sistema
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('LECTOR_INTERVALO_S',120);
+# pesos para la capacidad de la compu (tipo 0)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO0_MICRO',0.55);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO0_RAM',0.25);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO0_DISCO',0.10);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO0_VECINAS',0.10);
+# parámetros para la capacidad de la compu (tipo 0)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PARM0_FACTOR_ARQ',1.75);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PARM0_RELOJ_BASE',400);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PARM0_MEM_BASE',128);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PARM0_DISCO_BASE',1024);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PARM0_VECINAS_BASE',4);
+# pesos para la carga funcional (tipo 1)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO1_CARGA',0.50);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO1_VECINAS_USADAS',0.10);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO1_MEM_LIBRE',0.30);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO1_DISCO_LIBRE',0.10);
+# parámetros para la carga funcional (tipo 1)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PARM1_PROM_CARGA_MAX',0.50);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PARM1_MEM_LIBRE_MIN',0.30);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PARM1_DISCO_LIBRE_MIN',0.30);
+# pesos para la carga de aplicación (tipo 2)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO2_MAYOR',0.70);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PESO2_MENOR',0.30);
+# parámetro para la carga de aplicación (tipo 2)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PARM2_AJUSTE',1.00);
+# timeouts del sistema
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values('PLAN_ESPERA_MENSAJECONEX',60000.0)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values('DESPA_ESPERA_DETALLEIMPORT',30000.0)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values('DESPA_ESPERA_IMPORTACIONCONEX',30000.0)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values('DESPA_ESPERA_ARCHIVOIMPORT',30000.0)
+# tiempo mínimo en segundos que un subtrabajo debe cumplir para no ser interrumpido
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values('PLANIF_TIEMPOMINMARCHA',60.0)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values ('PLANIF_UMBRAL_ALFA',0.5);
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values('PLANIF_UMBRAL_BETA',60.0)
+insert into pesos_umbrales_politicas (id_pesoumbral,valor) values('PLANIF_UMBRAL_GAMMA',60.0)
+#################################
+# iba a crear una base de datos de info local, con 
+# números de puertos y otras cosas leídas de archivos
+# pero mejor no les doy tablas, pues se caracterizan por
+# ser datos de una única lectura: cuando inicia tdderive.
+# Sin embargo estos datos están de una forma no persistente
+# en el objeto admin.info.
+#################################
+#################################
+#################################
+# Sección para coordinación de tar.
+#################################
+#################################
+#################################
+create cached table tareas(
+# su nombre original fue grupos.
+# un grupo tiene info de los trabajos globales
+# se identifica para poderlos juntar globalmente
+# esta info solo está en la compu que es coordinadora
+# del trabajo
+  id_tarea CHAR(20) NOT NULL,
+  directorio CHAR(20) NOT NULL,
+  estado_tarea CHAR(20) NOT NULL,
+  hora_solicitud NUMERIC(10) NOT NULL,
+  hora_inicio NUMERIC(10) NOT NULL,
+  hora_fin NUMERIC(10) NOT NULL,
+  rutas_entrada CHAR(20) NOT NULL,
+  rutas_salida CHAR(20) NOT NULL,
+  si_coordina BIT NOT NULL,
+  alias CHAR(10) NOT NULL,
+  tiempo_ensistema NUMERIC(10) NOT NULL,
+  parametros CHAR(20) NOT NULL
+);
+create index grp01 on tareas (id_tarea);
+create index grp02 on tareas (estado_tarea);
+create index grp03 on tareas (si_coordina);
+create index grp04 on tareas (alias);
+
+create index grp11 on tareas (hora_solicitud);
+create index grp12 on tareas (hora_inicio);
+create index grp13 on tareas (hora_fin);
+#################################
+create cached table solicitantes(
+  id_parcial CHAR(20) NOT NULL,
+  id_padre CHAR(20) NOT NULL,
+  id_grupo CHAR(20) NOT NULL,
+  hora_solicitud NUMERIC(10) NOT NULL,
+  hora_inicio NUMERIC(10) NOT NULL,
+  hora_fin NUMERIC(10) NOT NULL,
+  pid_parcial CHAR(20) NOT NULL,
+  pid_padre CHAR(20) NOT NULL,
+  pid_grupo CHAR(20) NOT NULL,
+  si_entregado BIT NOT NULL,
+  tipo_sol CHAR(10) NOT NULL,
+  desde_nombre CHAR(20) NOT NULL,
+  desde_puerto NUMERIC(10) NOT NULL,
+  retorno LONGVARCHAR,
+  estado_solicitante CHAR(20) DEFAULT 'SOLICITANTE_INICIO' NOT NULL
+);
+create index sol01 on solicitantes (id_parcial);
+create index sol02 on solicitantes (id_padre);
+create index sol03 on solicitantes (id_grupo);
+create index sol04 on solicitantes (si_entregado);
+create index sol05 on solicitantes (tipo_sol);
+
+create index sol11 on solicitantes (hora_solicitud);
+create index sol12 on solicitantes (hora_inicio);
+create index sol13 on solicitantes (hora_fin);
+
+create index sol21 on solicitantes (pid_parcial);
+create index sol22 on solicitantes (pid_padre);
+create index sol23 on solicitantes (pid_grupo);
+create index sol24 on solicitantes (estado_solicitante);
+#################################
+create cached table sol_tar(
+  id_parcial CHAR(20) NOT NULL,
+  id_padre CHAR(20) NOT NULL,
+  id_grupo CHAR(20) NOT NULL,
+  id_tarea CHAR(20) NOT NULL,
+  si_iniciador BIT NOT NULL
+);
+create index solt01 on sol_tar (id_tarea);
+create index solt02 on sol_tar (id_parcial);
+create index solt03 on sol_tar (id_padre);
+create index solt04 on sol_tar (id_grupo);
+create index solt05 on sol_tar (si_iniciador);
+#################################
+create cached table sub_trabajos(
+# una cápsula siempre parte el trabajo
+# esta tabla guarda tal información.
+  id_tarea  CHAR(20) NOT NULL,
+  id_subtrabajo  CHAR(20) NOT NULL,
+  estado_subtrabajo CHAR(20) NOT NULL,
+  progreso NUMERIC(3),
+  directorio CHAR(100) NOT NULL,
+  comando CHAR(100) NOT NULL,
+  rutas_entrada CHAR(100),
+  rutas_salida CHAR(100),
+  carga NUMERIC(20,10) NOT NULL,
+  hora_ingreso NUMERIC(10) NOT NULL,
+  si_fin BIT DEFAULT 'false' NOT NULL
+);
+create index subt01 on sub_trabajos (id_subtrabajo);
+create index subt02 on sub_trabajos (id_tarea);
+create index subt03 on sub_trabajos (progreso);
+create index subt04 on sub_trabajos (estado_subtrabajo);
+create index subt05 on sub_trabajos (comando);
+#################################
+create cached table envolturas(
+# una envoltura tiene información de la
+# ejecución de un programa
+  id_parcial CHAR(20) NOT NULL,
+  id_padre CHAR(20) NOT NULL,
+  id_grupo CHAR(20) NOT NULL,
+  estado_control CHAR(20) NOT NULL,
+  hora_solicitud NUMERIC(10) NOT NULL,
+  hora_inicio NUMERIC(10) NOT NULL,
+  hora_fin NUMERIC(10) NOT NULL,
+  pid_parcial CHAR(20) NOT NULL,
+  pid_padre CHAR(20) NOT NULL,
+  pid_grupo CHAR(20) NOT NULL,
+  si_actual BIT NOT NULL,
+  alias CHAR(20) NOT NULL,
+  numero_confirmaciones NUMERIC(10),
+  id_tarea  CHAR(20) NOT NULL,
+  id_subtrabajo  CHAR(20) NOT NULL
+);
+create index env01 on envolturas (id_parcial);
+create index env02 on envolturas (id_padre);
+create index env03 on envolturas (id_grupo);
+create index env04 on envolturas (alias);
+create index env05 on envolturas (id_tarea);
+create index env06 on envolturas (id_subtrabajo);
+
+create index env11 on envolturas (estado_control);
+create index env12 on envolturas (si_actual);
+create index env13 on envolturas (numero_confirmaciones);
+
+create index env21 on envolturas (hora_solicitud);
+create index env22 on envolturas (hora_inicio);
+create index env23 on envolturas (hora_fin);
+
+create index env31 on envolturas (pid_parcial);
+create index env32 on envolturas (pid_padre);
+create index env33 on envolturas (pid_grupo);
+#################################
+create cached table programas(
+  alias CHAR(20) NOT NULL,
+  nombre_aplicacion VARCHAR,
+  ruta CHAR(100) NOT NULL,
+  clase CHAR(100),
+  divisora CHAR(100),
+  unificadora CHAR(100),
+  tiempo_ensistema NUMERIC(10) NOT NULL,
+  periodo_confirmacion NUMERIC(10) NOT NULL,
+  umbral_espera NUMERIC(10) NOT NULL,
+  si_cambiarcompu BIT NOT NULL
+);
+create index prog01 on programas (alias);
+create index prog02 on programas (si_cambiarcompu);
+create index prog03 on programas (divisora);
+create index prog04 on programas (unificadora);
+#################################
+create cached table resultados(
+  id_tarea  CHAR(20) NOT NULL,
+  id_subtrabajo  CHAR(20) NOT NULL,
+  hora_fin NUMERIC(10) NOT NULL,
+  rutas CHAR(100) NOT NULL,
+  si_completado BIT NOT NULL
+);
+create index res01 on resultados (id_tarea);
+create index res02 on resultados (id_subtrabajo);
+create index res03 on resultados (si_completado);
+#################################
+create cached table controladores(
+  id_parcial CHAR(20) NOT NULL,
+  id_padre CHAR(20) NOT NULL,
+  id_grupo CHAR(20) NOT NULL,
+  hora_solicitud NUMERIC(10) NOT NULL,
+  hora_inicio NUMERIC(10) NOT NULL,
+  hora_fin NUMERIC(10) NOT NULL,
+  pid_parcial CHAR(20) NOT NULL,
+  pid_padre CHAR(20) NOT NULL,
+  pid_grupo CHAR(20) NOT NULL,
+  id_tarea CHAR(20) NOT NULL,
+  si_activo BIT NOT NULL
+);
+create index coo01 on controladores (id_parcial);
+create index coo02 on controladores (id_padre);
+create index coo03 on controladores (id_grupo);
+create index coo04 on controladores (id_tarea);
+create index coo05 on controladores (si_activo);
+
+create index coo11 on controladores (hora_solicitud);
+create index coo12 on controladores (hora_inicio);
+create index coo13 on controladores (hora_fin);
+
+create index coo21 on controladores (pid_parcial);
+create index coo22 on controladores (pid_padre);
+create index coo23 on controladores (pid_grupo);
+#################################
+# Controladores externos
+#################################
+create cached table Conts_externos (
+    id_tarea CHAR(20) NOT NULL,
+    id_subtrabajo CHAR(20) NOT NULL,
+    id_contremoto CHAR(20) NOT NULL,
+    id_contlocal CHAR(20) NOT NULL,
+    hora_solicitud NUMERIC(10) NOT NULL,
+    hora_ejecucionremota NUMERIC(10) NOT NULL,
+    estado_contremoto CHAR(10) NOT NULL
+);
+#indices
+create index constext01 on Conts_externos ( id_tarea );
+create index constext02 on Conts_externos ( id_subtrabajo );
+create index constext03 on Conts_externos ( id_contremoto );
+create index constext04 on Conts_externos ( id_contlocal );
+create index constext05 on Conts_externos ( estado_contremoto );
+create index constext06 on Conts_externos ( hora_solicitud );
+create index constext07 on Conts_externos ( hora_ejecucionremota );
+
+#################################
+create cached table archivos(
+  id_tarea  CHAR(20) NOT NULL,
+  id_subtrabajo  CHAR(20) NOT NULL,
+  nombre CHAR(100) NOT NULL,
+  bloque CHAR(100) DEFAULT '' NOT NULL,
+  info_archivo CHAR(20) DEFAULT '' NOT NULL,
+  si_entrada  BIT DEFAULT 'true' NOT NULL,
+  si_local BIT DEFAULT 'false' NOT NULL,
+  estado_archivo CHAR(20) DEFAULT 'ARCHIVO_AUSENTE' NOT NULL,
+  ruta_original CHAR(100) NOT NULL
+);
+create index arch01 on archivos (id_tarea);
+create index arch02 on archivos (id_subtrabajo);
+create index arch03 on archivos (nombre);
+create index arch04 on archivos (bloque);
+create index arch05 on archivos (si_entrada);
+create index arch06 on archivos (si_local);
+create index arch07 on archivos (estado_archivo);
+create index arch08 on archivos (info_archivo);
+#################################
+create cached table computadora(
+# tabla de un solo registro.
+  buses_tipo NUMERIC(10) NOT NULL,
+  micro_cant NUMERIC(10) NOT NULL,
+  micro_reloj NUMERIC(10) NOT NULL,
+  memoria_cant NUMERIC(10) NOT NULL,
+  disco_cant NUMERIC(10) NOT NULL,
+  micro_libre NUMERIC(10) NOT NULL,
+  mem_libre NUMERIC(10) NOT NULL,
+  clase_balance CHAR(20) NOT NULL,
+  nombre CHAR(20) NOT NULL,
+  disco_libre NUMERIC(10) NOT NULL
+);
+#################################
+create cached table retornos(
+  id_parcial CHAR(20) NOT NULL,
+  id_padre CHAR(20) NOT NULL,
+  id_grupo CHAR(20) NOT NULL,
+  id_retorno CHAR(20) NOT NULL,
+  tipo_retorno CHAR(10) NOT NULL,
+  valor_retorno CHAR(100) NOT NULL,
+  estado_retorno CHAR(10) NOT NULL
+);
+create index ret01 on retornos (id_parcial);
+create index ret02 on retornos (id_padre);
+create index ret03 on retornos (id_grupo);
+create index ret04 on retornos (id_retorno);
+
+create index ret11 on retornos (tipo_retorno);
+create index ret12 on retornos (estado_retorno);
+
+
+
+#################################
+update estado_tablas set si_terminada=true;
+commit;

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" size="2069,2707" id="001mxAlessandrooact0" metadata="nsuml-1.4" initialized="true" showWireOptions="3" zoom="0.25" scrolledY="43">
+  <children xsi:type="editmodel:ClassEditModel" location="388,745" size="110,26" id="001mxAlessandrooact1462" runTimeClassModel="001mxAlessandrooact1467;001mxAlessandrooact1492;001mxAlessandrooact1477;001mxAlessandrooact1473;001mxAlessandrooact1484;001mxAlessandrooact1495;001mxAlessandrooact1465;001mxAlessandrooact1487;001mxAlessandrooact1469;001mxAlessandrooact1475;001mxAlessandrooact1490;001mxAlessandrooact1482;001mxAlessandrooact1471;001mxAlessandrooact1463">
+    <children xsi:type="editmodel:CompartmentEditModel" size="122,80"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,16"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="768,198" size="137,26" targetConnections="//@children.8/@sourceConnections.0" id="001mxAlessandrooact444" runTimeClassModel="001mxAlessandrooact540;001mxAlessandrooact553;001mxAlessandrooact545;001mxAlessandrooact548;001mxAlessandrooact559;001mxAlessandrooact537;001mxAlessandrooact543;001mxAlessandrooact550;001mxAlessandrooact536;001mxAlessandrooact569;001mxAlessandrooact571;001mxAlessandrooact562;001mxAlessandrooact535;001mxAlessandrooact565;001mxAlessandrooact538">
+    <children xsi:type="editmodel:CompartmentEditModel" size="162,48"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="149,192"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact537" connectionRouterKind="Manhattan" source="//@children.1" target="//@children.12" targetEnd="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact537" navigable="true" flags="2" multiplicityLabel="//@children.1/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="51,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="226,486" size="184,26" targetConnections="//@children.11/@sourceConnections.2" id="001mxAlessandrooact198" runTimeClassModel="001mxAlessandrooact587;001mxAlessandrooact584;001mxAlessandrooact593;001mxAlessandrooact595;001mxAlessandrooact582;001mxAlessandrooact599;001mxAlessandrooact597;001mxAlessandrooact603;001mxAlessandrooact583;001mxAlessandrooact590">
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,32"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,128"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact583" connectionRouterKind="Manhattan" source="//@children.2" target="//@children.11" targetEnd="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact583" navigable="true" flags="2" multiplicityLabel="//@children.2/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="51,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="904,607" size="171,26" targetConnections="//@children.6/@sourceConnections.0" id="001mxAlessandrooact326" runTimeClassModel="001mxAlessandrooact1573;001mxAlessandrooact1529;001mxAlessandrooact1525;001mxAlessandrooact1534;001mxAlessandrooact1544;001mxAlessandrooact1551;001mxAlessandrooact1555;001mxAlessandrooact1540;001mxAlessandrooact1548;001mxAlessandrooact1526;001mxAlessandrooact1567;001mxAlessandrooact1570;001mxAlessandrooact1538;001mxAlessandrooact1527;001mxAlessandrooact1542;001mxAlessandrooact1531;001mxAlessandrooact1558;001mxAlessandrooact1536;001mxAlessandrooact1553;001mxAlessandrooact1528;001mxAlessandrooact1564;001mxAlessandrooact1561;001mxAlessandrooact1575">
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,64"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="192,304"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact1528" connectionRouterKind="Manhattan" source="//@children.3" target="//@children.11" targetEnd="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact1528" navigable="true" flags="2" multiplicityLabel="//@children.3/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="51,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact1525" connectionRouterKind="Manhattan" source="//@children.3" target="//@children.6" targetEnd="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact1525" navigable="true" flags="2" multiplicityLabel="//@children.3/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.3/@sourceConnections.1/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="25,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="354,336" size="153,26" targetConnections="//@children.11/@sourceConnections.1" id="001mxAlessandrooact196" runTimeClassModel="001mxAlessandrooact422;001mxAlessandrooact429;001mxAlessandrooact418;001mxAlessandrooact415;001mxAlessandrooact409;001mxAlessandrooact424;001mxAlessandrooact407;001mxAlessandrooact412;001mxAlessandrooact404;001mxAlessandrooact420;001mxAlessandrooact427">
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,16"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="184,160"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="765,354" size="135,26" id="001mxAlessandrooact175" runTimeClassModel="001mxAlessandrooact289;001mxAlessandrooact267;001mxAlessandrooact287;001mxAlessandrooact269;001mxAlessandrooact285;001mxAlessandrooact270;001mxAlessandrooact266;001mxAlessandrooact268;001mxAlessandrooact279;001mxAlessandrooact281;001mxAlessandrooact283;001mxAlessandrooact272">
+    <children xsi:type="editmodel:CompartmentEditModel" size="162,64"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,128"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact268" connectionRouterKind="Manhattan" source="//@children.5" target="//@children.12" targetEnd="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact268" navigable="true" flags="2" multiplicityLabel="//@children.5/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="51,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact269" connectionRouterKind="Manhattan" source="//@children.5" target="//@children.8" targetEnd="//@children.5/@sourceConnections.1/@children.0" sourceEnd="//@children.5/@sourceConnections.1/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact269" navigable="true" flags="2" multiplicityLabel="//@children.5/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.5/@sourceConnections.1/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="50,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="938,478" size="120,26" targetConnections="//@children.3/@sourceConnections.1" id="001mxAlessandrooact160" runTimeClassModel="001mxAlessandrooact321;001mxAlessandrooact385;001mxAlessandrooact380;001mxAlessandrooact330;001mxAlessandrooact363;001mxAlessandrooact341;001mxAlessandrooact352;001mxAlessandrooact323;001mxAlessandrooact332;001mxAlessandrooact339;001mxAlessandrooact328;001mxAlessandrooact325;001mxAlessandrooact344;001mxAlessandrooact347;001mxAlessandrooact322;001mxAlessandrooact382;001mxAlessandrooact361;001mxAlessandrooact354;001mxAlessandrooact334;001mxAlessandrooact370;001mxAlessandrooact329;001mxAlessandrooact320;001mxAlessandrooact331;001mxAlessandrooact349;001mxAlessandrooact327;001mxAlessandrooact356;001mxAlessandrooact324;001mxAlessandrooact372;001mxAlessandrooact375;001mxAlessandrooact358;001mxAlessandrooact336">
+    <children xsi:type="editmodel:CompartmentEditModel" size="161,176"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="209,320"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact325" connectionRouterKind="Manhattan" source="//@children.6" target="//@children.3" targetEnd="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact325" navigable="true" flags="2" multiplicityLabel="//@children.6/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.6/@sourceConnections.0/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="42,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="456,112" size="258,26" targetConnections="//@children.12/@sourceConnections.0" id="001mxAlessandrooact9" runTimeClassModel="001mxAlessandrooact82;001mxAlessandrooact86;001mxAlessandrooact83;001mxAlessandrooact94;001mxAlessandrooact90;001mxAlessandrooact107;001mxAlessandrooact98;001mxAlessandrooact80;001mxAlessandrooact84;001mxAlessandrooact92;001mxAlessandrooact105;001mxAlessandrooact96;001mxAlessandrooact88">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="885,288" size="114,26" targetConnections="//@children.5/@sourceConnections.1" id="001mxAlessandrooact52" runTimeClassModel="001mxAlessandrooact518;001mxAlessandrooact450;001mxAlessandrooact508;001mxAlessandrooact487;001mxAlessandrooact497;001mxAlessandrooact516;001mxAlessandrooact455;001mxAlessandrooact446;001mxAlessandrooact445;001mxAlessandrooact494;001mxAlessandrooact448;001mxAlessandrooact499;001mxAlessandrooact449;001mxAlessandrooact483;001mxAlessandrooact479;001mxAlessandrooact443;001mxAlessandrooact512;001mxAlessandrooact471;001mxAlessandrooact476;001mxAlessandrooact460;001mxAlessandrooact501;001mxAlessandrooact447;001mxAlessandrooact458;001mxAlessandrooact469;001mxAlessandrooact505;001mxAlessandrooact485;001mxAlessandrooact463;001mxAlessandrooact452;001mxAlessandrooact474;001mxAlessandrooact490;001mxAlessandrooact466;001mxAlessandrooact503;001mxAlessandrooact510">
+    <children xsi:type="editmodel:CompartmentEditModel" size="146,112"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="172,416"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact443" connectionRouterKind="Manhattan" source="//@children.8" target="//@children.1" targetEnd="//@children.8/@sourceConnections.0/@children.0" sourceEnd="//@children.8/@sourceConnections.0/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact443" navigable="true" flags="2" multiplicityLabel="//@children.8/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.8/@sourceConnections.0/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="52,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="181,745" size="123,26" targetConnections="//@children.10/@sourceConnections.0" id="001mxAlessandrooact182" runTimeClassModel="001mxAlessandrooact312;001mxAlessandrooact304;001mxAlessandrooact302;001mxAlessandrooact307">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,64"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="170,825" size="150,26" id="001mxAlessandrooact254" runTimeClassModel="001mxAlessandrooact859;001mxAlessandrooact855;001mxAlessandrooact852;001mxAlessandrooact850">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="148,64"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="001mxAlessandrooact255" connectionRouterKind="Manual" source="//@children.10" target="//@children.9" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-1,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="521,609" size="130,26" targetConnections="//@children.3/@sourceConnections.0 //@children.2/@sourceConnections.0" id="001mxAlessandrooact194" runTimeClassModel="001mxAlessandrooact211;001mxAlessandrooact222;001mxAlessandrooact225;001mxAlessandrooact214;001mxAlessandrooact229;001mxAlessandrooact197;001mxAlessandrooact207;001mxAlessandrooact209;001mxAlessandrooact216;001mxAlessandrooact195;001mxAlessandrooact227;001mxAlessandrooact199;001mxAlessandrooact205;001mxAlessandrooact219;001mxAlessandrooact202;001mxAlessandrooact231">
+    <children xsi:type="editmodel:CompartmentEditModel" size="185,32"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="240,224"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" connectionRouterKind="Manual" source="//@children.11" target="//@children.12" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact195" connectionRouterKind="Manhattan" source="//@children.11" target="//@children.4" targetEnd="//@children.11/@sourceConnections.1/@children.0" sourceEnd="//@children.11/@sourceConnections.1/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact195" navigable="true" flags="2" multiplicityLabel="//@children.11/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.11/@sourceConnections.1/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="79,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact197" connectionRouterKind="Manhattan" source="//@children.11" target="//@children.2" targetEnd="//@children.11/@sourceConnections.2/@children.0" sourceEnd="//@children.11/@sourceConnections.2/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact197" navigable="true" flags="2" multiplicityLabel="//@children.11/@sourceConnections.2/@children.0/@children.1" roleLabel="//@children.11/@sourceConnections.2/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="58,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" location="503,259" size="161,26" targetConnections="//@children.11/@sourceConnections.0 //@children.5/@sourceConnections.0 //@children.1/@sourceConnections.0" id="001mxAlessandrooact1" runTimeClassModel="001mxAlessandrooact2;001mxAlessandrooact21;001mxAlessandrooact71;001mxAlessandrooact10;001mxAlessandrooact9;001mxAlessandrooact18;001mxAlessandrooact57;001mxAlessandrooact63;001mxAlessandrooact130;001mxAlessandrooact28;001mxAlessandrooact42;001mxAlessandrooact34;001mxAlessandrooact20;001mxAlessandrooact12;001mxAlessandrooact77;001mxAlessandrooact50;001mxAlessandrooact44;001mxAlessandrooact75;001mxAlessandrooact69;001mxAlessandrooact47;001mxAlessandrooact17;001mxAlessandrooact14;001mxAlessandrooact73;001mxAlessandrooact19;001mxAlessandrooact5;001mxAlessandrooact8;001mxAlessandrooact24;001mxAlessandrooact15;001mxAlessandrooact67;001mxAlessandrooact16;001mxAlessandrooact38">
+    <children xsi:type="editmodel:CompartmentEditModel" size="174,192"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="179,240"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="110,56"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="001mxAlessandrooact8" connectionRouterKind="Manhattan" source="//@children.12" target="//@children.7" targetEnd="//@children.12/@sourceConnections.0/@children.0" sourceEnd="//@children.12/@sourceConnections.0/@children.1">
+      <children xsi:type="editmodel:AssociationEndEditModel" id="001mxAlessandrooact8" navigable="true" flags="4" multiplicityLabel="//@children.12/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.12/@sourceConnections.0/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" size="35,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" size="19,14" fontInfo="Arial-8-0" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,-1" attachSource="true"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true"/>
+  </children>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPackageStereotype="true"/>
+</editmodel:ClassDiagramEditModel>

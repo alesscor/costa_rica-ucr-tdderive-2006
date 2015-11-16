@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<info_global>
+  <!--
+Indica las identificaciones de los nodos y sus direcciones.
+Indica los nodos adyacentes en su dominio de balance y datos sobre cada enlace.
+Los atributos "nombre" y "archivoantes" no son tomados en cuenta, solamente se ponen por claridad.
+-->
+  <ubicaciones_globales archivoantes="ubicaciones.xml">
+    <ubicaciones>
+      <ubicanodo>
+        <nombre>001mx.1</nombre>
+        <direccion>192.168.0.1</direccion>
+      </ubicanodo>
+      <ubicanodo>
+        <nombre>compa</nombre>
+        <direccion>192.168.0.3</direccion>
+      </ubicanodo>
+      <ubicanodo>
+        <nombre>refor</nombre>
+        <direccion>192.168.0.2</direccion>
+      </ubicanodo>
+    </ubicaciones>
+    <enlaces>
+      <enlace>
+        <nodo1id>compa</nodo1id>
+        <nodo2id>001mX.1</nodo2id>
+        <peso>1.02</peso>
+        <espera>13000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>refor</nodo1id>
+        <nodo2id>001mX.1</nodo2id>
+        <peso>1.04</peso>
+        <espera>20000</espera>
+      </enlace>
+    </enlaces>
+  </ubicaciones_globales>
+  <!--Valores para caracterizar las políticas globales.-->
+  <politicas archivoantes="no habia">
+    <umbral>
+      <nombre>primero</nombre>
+      <valor>125</valor>
+    </umbral>
+    <umbral>
+      <nombre>segundo</nombre>
+      <valor>126</valor>
+    </umbral>
+    <umbral>
+      <nombre>tercero</nombre>
+      <valor>127</valor>
+    </umbral>
+    <umbral>
+      <nombre>cuarto</nombre>
+      <valor>126</valor>
+    </umbral>
+    <umbral>
+      <nombre>quinto</nombre>
+      <valor>127</valor>
+    </umbral>
+  </politicas>
+  <base_de_datos archivoantes="no habia">
+    <!--Ubicacion de la base de datos, su controlador y otros.-->
+    <bd_controlador>org.hsqldb.jdbcDriver</bd_controlador>
+    <bd_url>jdbc:hsqldb:info/adminbd</bd_url>
+    <script_inibd_url>create_db.txt</script_inibd_url>
+    <script_finbd_url>destroy_db.txt</script_finbd_url>
+  </base_de_datos>
+  <!--
+Configuraciones de "bajo nivel".
+Los atributos "nombre" y "archivoantes" no son tomados en cuenta, solamente se ponen por claridad.
+-->
+  <nivel_aco>
+    <!--Nivel del patron aceptador conector -->
+    <aco>
+      <acc nombre="ACONAceptadorDesp" archivoantes="acon.cons.xml">
+        <config>
+          <puerto_bitacora>4412</puerto_bitacora>
+          <con_bitacora>true</con_bitacora>
+        </config>
+      </acc>
+    </aco>
+    <acocons>
+      <configuracion nombre="ACONAceptadorServidor" archivoantes="acon.cons.xml">
+        <otro>
+          <clave>quE es</clave>
+          <puerto>3310</puerto>
+          <espera>4000</espera>
+        </otro>
+      </configuracion>
+    </acocons>
+  </nivel_aco>
+  <nivel_oact_planificador>
+    <!--Nivel del patron objeto activo para la planificacion -->
+    <distribuidor nombre="OACTDistribuidor" archivoantes="oact.xml">
+      <oact>
+        <!--Puerto del planificador -->
+        <puerto>5511</puerto>
+        <intervalo>10000</intervalo>
+        <con_bitacora>true</con_bitacora>
+        <puerto_bitacora>4412</puerto_bitacora>
+      </oact>
+    </distribuidor>
+  </nivel_oact_planificador>
+  <nivel_oact_despachador>
+    <!--Nivel del patron objeto activo para el despacho -->
+    <distribuidor nombre="OACTDistribuidor" archivoantes="oact.xml">
+      <oact>
+        <!--Puerto del despachador -->
+        <puerto>5510</puerto>
+        <intervalo>10000</intervalo>
+        <con_bitacora>true</con_bitacora>
+        <puerto_bitacora>4412</puerto_bitacora>
+      </oact>
+    </distribuidor>
+  </nivel_oact_despachador>
+  <nivel_bitacora>
+    <!--Nivel de la bitácora del sistema -->
+    <bitacora nombre="BITAServidor" archivoantes="bitacoras.xml">
+      <bita>
+        <archivo>.bitacora.nxml</archivo>
+        <puerto_ingresos>4412</puerto_ingresos>
+        <puerto_salidas>4413</puerto_salidas>
+        <clave>quiero ver</clave>
+        <intervalo_flush>10</intervalo_flush>
+      </bita>
+    </bitacora>
+  </nivel_bitacora>
+</info_global>

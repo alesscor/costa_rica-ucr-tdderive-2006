@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/aco"/>
+	<classpathentry kind="src" path="/admin"/>
+	<classpathentry kind="src" path="/mens"/>
+	<classpathentry kind="src" path="/oact"/>
+	<classpathentry kind="src" path="/orgainfo"/>
+	<classpathentry kind="src" path="/tables"/>
+	<classpathentry kind="src" path="/tdutils"/>
+	<classpathentry kind="lib" path="V:/tdderive/eclipse.fin.tesis/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="V:/tdderive/eclipse.fin.tesis/lib/xml4j.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

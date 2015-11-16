@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<nodo_local>
+<identificacion>192.168.0.3</identificacion>
+<info_global>admin_global.xml</info_global>
+<umbrales_locales> 
+</umbrales_locales>
+</nodo_local>

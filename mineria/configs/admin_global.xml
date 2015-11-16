@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<info_global>
+  <!--
+Indica las identificaciones de los nodos y sus direcciones.
+-->
+  <ubicaciones>
+    <ubicanodo>
+      <nodoid>001mx.1</nodoid>
+      <direccion>192.168.0.1</direccion>
+      <puerto>6540</puerto>
+    </ubicanodo>
+    <ubicanodo>
+      <nodoid>001mx.2</nodoid>
+      <direccion>192.168.0.1</direccion>
+      <puerto>6541</puerto>
+    </ubicanodo>
+    <ubicanodo>
+      <nodoid>001mx.3</nodoid>
+      <direccion>127.0.0.1</direccion>
+      <puerto>6542</puerto>
+    </ubicanodo>
+    <ubicanodo>
+      <nodoid>refor</nodoid>
+      <direccion>163.178.109.3</direccion>
+      <puerto>4444</puerto>
+    </ubicanodo>
+  </ubicaciones>
+  <!--
+Indica los nodos adyacentes en su dominio de balance y datos sobre cada enlace.
+-->
+  <enlaces>
+    <enlace>
+      <nodo1id>001mX.1</nodo1id>
+      <nodo2id>001MX.2</nodo2id>
+      <datos>"hola"</datos>
+    </enlace>
+    <enlace>
+      <nodo1id>001MX.2</nodo1id>
+      <nodo2id>001mX.3</nodo2id>
+      <datos>"hola otra vez"</datos>
+    </enlace>
+  </enlaces>
+  <!--
+Valores para caracterizar las políticas globales.
+ -->
+  <politicas_globales>
+    <umbrales>
+    </umbrales>
+    <pesos>
+    </pesos>
+  </politicas_globales>
+  <admin>
+    <puerto_despachador>5510</puerto_despachador>
+    <puerto_planificador>5511</puerto_planificador>
+  </admin>
+  <!--
+A utilizar cuando la base de datos no existe para generarla.
+-->
+  <tdderive_base>
+    <directorio>base_de_datos</directorio>
+    <script>
+    </script>
+  </tdderive_base>
+  <!--
+Configuraciones de "bajo nivel".
+-->
+  <nivel_aco>
+    <aco>aco.xml</aco>
+    <aco_consultas>aco.xml</aco_consultas>
+  </nivel_aco>
+  <nivel_oact>
+    oact.xml
+  </nivel_oact>
+  <bitacora>
+    bitacoras.xml
+  </bitacora>
+</info_global>

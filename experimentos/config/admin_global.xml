@@ -1,0 +1,209 @@
+<?xml version="1.0"?>  <info_global> <!-- Indica las identificaciones de los nodos y sus direcciones.
+Indica los nodos adyacentes en su dominio de balance y datos sobre cada enlace.
+-->
+  <ubicaciones_globales>
+    <ubicaciones>
+      <ubicanodo>
+        <nombre>td.1</nombre>
+        <direccion>192.168.0.4</direccion>
+        <desplaza_puerto>100</desplaza_puerto>
+      </ubicanodo>
+      <ubicanodo>
+        <nombre>td.2</nombre>
+        <direccion>192.168.0.4</direccion>
+        <desplaza_puerto>200</desplaza_puerto>
+      </ubicanodo>
+      <ubicanodo>
+        <nombre>td.3</nombre>
+        <direccion>192.168.0.4</direccion>
+        <desplaza_puerto>333</desplaza_puerto>
+      </ubicanodo>
+      <ubicanodo>
+        <nombre>td.4</nombre>
+        <direccion>192.168.0.4</direccion>
+        <desplaza_puerto>400</desplaza_puerto>
+      </ubicanodo>
+      <ubicanodo>
+        <nombre>td.5</nombre>
+        <direccion>192.168.0.4</direccion>
+        <desplaza_puerto>500</desplaza_puerto>
+      </ubicanodo>
+      <ubicanodo>
+        <nombre>td.6</nombre>
+        <direccion>192.168.0.4</direccion>
+        <desplaza_puerto>600</desplaza_puerto>
+      </ubicanodo>
+      <ubicanodo>
+        <nombre>td.7</nombre>
+        <direccion>192.168.0.4</direccion>
+        <desplaza_puerto>700</desplaza_puerto>
+      </ubicanodo>
+      <ubicanodo>
+        <nombre>td.8</nombre>
+        <direccion>192.168.0.4</direccion>
+        <desplaza_puerto>800</desplaza_puerto>
+      </ubicanodo>
+    </ubicaciones>
+    <enlaces>
+      <enlace>
+        <nodo1id>td.2</nodo1id>
+        <nodo2id>td.1</nodo2id>
+        <peso>1</peso>
+        <espera>13000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.3</nodo1id>
+        <nodo2id>td.1</nodo2id>
+        <peso>2</peso>
+        <espera>20000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.3</nodo1id>
+        <nodo2id>td.2</nodo2id>
+        <peso>3</peso>
+        <espera>20000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.3</nodo1id>
+        <nodo2id>td.4</nodo2id>
+        <peso>4</peso>
+        <espera>20000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.4</nodo1id>
+        <nodo2id>td.5</nodo2id>
+        <peso>5</peso>
+        <espera>20000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.5</nodo1id>
+        <nodo2id>td.6</nodo2id>
+        <peso>6</peso>
+        <espera>20000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.4</nodo1id>
+        <nodo2id>td.6</nodo2id>
+        <peso>7</peso>
+        <espera>20000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.6</nodo1id>
+        <nodo2id>td.7</nodo2id>
+        <peso>8</peso>
+        <espera>20000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.7</nodo1id>
+        <nodo2id>td.8</nodo2id>
+        <peso>9</peso>
+        <espera>20000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.8</nodo1id>
+        <nodo2id>td.1</nodo2id>
+        <peso>10</peso>
+        <espera>20000</espera>
+      </enlace>
+      <enlace>
+        <nodo1id>td.6</nodo1id>
+        <nodo2id>td.1</nodo2id>
+        <peso>11</peso>
+        <espera>20000</espera>
+      </enlace>
+    </enlaces>
+  </ubicaciones_globales>
+  <!--Valores para caracterizar las politicas globales.-->
+	<politicas>
+		<!-- pesos para la capacidad de la compu (tipo 0) -->
+		<umbral><nombre>PESO0_MICRO</nombre><valor>0.55</valor></umbral>
+		<umbral><nombre>PESO0_RAM</nombre><valor>0.25</valor></umbral>
+		<umbral><nombre>PESO0_DISCO</nombre><valor>0.10</valor></umbral>
+		<umbral><nombre>PESO0_VECINAS</nombre><valor>0.10</valor></umbral>
+		<!-- parametros para la capacidad de la compu (tipo 0) -->
+		<umbral><nombre>PARM0_FACTOR_ARQ</nombre><valor>1.75</valor></umbral>
+		<umbral><nombre>PARM0_RELOJ_BASE</nombre><valor>400</valor></umbral>
+		<umbral><nombre>PARM0_MEM_BASE</nombre><valor>128</valor></umbral>
+		<umbral><nombre>PARM0_DISCO_BASE</nombre><valor>1024</valor></umbral>
+		<umbral><nombre>PARM0_VECINAS_BASE</nombre><valor>4</valor></umbral>
+		<!-- pesos para la carga funcional (tipo 1) -->
+		<umbral><nombre>PESO1_CARGA</nombre><valor>0.50</valor></umbral>
+		<umbral><nombre>PESO1_VECINAS_USADAS</nombre><valor>0.10</valor></umbral>
+		<umbral><nombre>PESO1_MEM_LIBRE</nombre><valor>0.30</valor></umbral>
+		<umbral><nombre>PESO1_DISCO_LIBRE</nombre><valor>0.10</valor></umbral>
+		<!-- parametros para la carga funcional (tipo 1) -->
+		<umbral><nombre>PARM1_PROM_CARGA_MAX</nombre><valor>0.50</valor></umbral>
+		<umbral><nombre>PARM1_MEM_LIBRE_MIN</nombre><valor>0.30</valor></umbral>
+		<umbral><nombre>PARM1_DISCO_LIBRE_MIN</nombre><valor>0.30</valor></umbral>
+		<!-- pesos para la carga de aplicacion (tipo 2) -->
+		<umbral><nombre>PESO2_MAYOR</nombre><valor>0.70</valor></umbral>
+		<umbral><nombre>PESO2_MENOR</nombre><valor>0.30</valor></umbral>
+		<!-- parametro para la carga de aplicacion (tipo 2) -->
+		<umbral><nombre>PARM2_AJUSTE</nombre><valor>1.00</valor></umbral>
+		<!-- otros de políticas -->
+		<umbral><nombre>LECTOR_INTERVALO_S</nombre><valor>120.0</valor></umbral>
+		<umbral><nombre>HIDRO_UMBRAL</nombre><valor>0.5</valor></umbral>
+		<umbral><nombre>NODOFUERA_INTERVALO_S</nombre><valor>240</valor></umbral>		<umbral><nombre>SUBREINICIO_INTERVALO_S</nombre><valor>240</valor></umbral>		<umbral><nombre>ESPERA_ENVIO_S</nombre><valor>2</valor></umbral>	</politicas>
+  <!--Configuraciones de "bajo nivel".
+Los atributos "nombre" y "archivoantes" no son tomados en cuenta, solamente se ponen por claridad.
+-->
+  <nivel_aco>
+    <!--Nivel del patron aceptador conector -->
+    <aco>
+      <acc nombre="ACONAceptadorDesp">
+        <config>
+          <puerto_bitacora>4412</puerto_bitacora>
+          <con_bitacora>true</con_bitacora>
+        </config>
+      </acc>
+    </aco>
+    <acocons>
+      <configuracion nombre="ACONAceptadorServidor">
+        <otro>
+          <clave>quE es</clave>
+          <puerto>3310</puerto>
+          <espera>4000</espera>
+        </otro>
+      </configuracion>
+    </acocons>
+  </nivel_aco>
+  <nivel_oact_planificador>
+    <!--Nivel del patron objeto activo para la planificacion -->
+    <sirviente>admin.DIRHidrodinamico</sirviente>
+    <distribuidor nombre="OACTDistribuidor">
+      <oact>
+        <!--Puerto del planificador -->
+        <identificacion>planificador</identificacion>
+        <puerto>4521</puerto>
+        <intervalo>100000</intervalo>
+        <con_bitacora>true</con_bitacora>
+        <puerto_bitacora>4412</puerto_bitacora>
+      </oact>
+    </distribuidor>
+  </nivel_oact_planificador>
+  <nivel_oact_despachador>
+    <!--Nivel del patron objeto activo para el despacho -->
+    <distribuidor nombre="OACTDistribuidor">
+      <oact>
+        <!--Puerto del despachador -->
+        <identificacion>despachador</identificacion>
+        <puerto>4520</puerto>
+        <intervalo>100000</intervalo>
+        <con_bitacora>true</con_bitacora>
+        <puerto_bitacora>4412</puerto_bitacora>
+      </oact>
+    </distribuidor>
+  </nivel_oact_despachador>
+  <nivel_bitacora>
+    <!--Nivel de la bitacora del sistema -->
+    <bitacora nombre="BITAServidor">
+      <bita>
+        <archivo>.bitacora.txt</archivo>
+        <puerto_ingresos>4412</puerto_ingresos>
+        <puerto_salidas>4413</puerto_salidas>
+        <clave>quiero ver</clave>
+        <intervalo_flush>10</intervalo_flush>
+      </bita>
+    </bitacora>
+  </nivel_bitacora>
+</info_global>

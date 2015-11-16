@@ -1,0 +1,1 @@
+copy /b tdutils.tdutils$SplitInfo@df8f5e basura.txt

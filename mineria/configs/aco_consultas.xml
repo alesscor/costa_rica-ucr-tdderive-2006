@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configuracion nombre="ACONAceptadorServidor">
+<otro>
+<clave>quE es</clave>
+<puerto>3310</puerto>
+<espera>4000</espera>
+</otro>
+</configuracion>

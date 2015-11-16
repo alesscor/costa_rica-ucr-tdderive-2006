@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<valores_locales>
+  <alias_local>td.6</alias_local>
+  <tdderive_base>
+    <!--Ubicacion de la base de datos, su controlador y otros.-->
+    <bd_controlador>org.hsqldb.jdbcDriver</bd_controlador>
+    <bd_url>jdbc:hsqldb:C:/MyProjects/eclipse/running/rnn006/info/adminbd</bd_url>
+    <!--La ruta base es la del paquete-->
+    <script_inibd_url>C:/MyProjects/eclipse/config/create_db.txt</script_inibd_url>
+    <script_finbd_url>C:/MyProjects/eclipse/config/destroy_db.txt</script_finbd_url>
+    <usuario>sa</usuario>
+    <!--Esta es la ruta en donde se guardan los archivos de trabajo-->
+    <raiz_tdderive>C:/MyProjects/eclipse/running/rnn006</raiz_tdderive>
+  </tdderive_base>
+  <tdderive_bajonivel>
+    <!--Esta es la velocidad del reloj del microprocesador en MHz-->
+    <relojMHz>100</relojMHz>
+    <tipoBuses>BUSES_PC</tipoBuses>
+    <!--Segundos antes que el lector realize la próxima lectura.-->
+    <!-- <intervalo_s>120</intervalo_s> -->
+    <cantMicrop>1</cantMicrop>
+  </tdderive_bajonivel>
+  <programas>
+    <programa>
+      <alias>notepad</alias>
+      <nombre_aplicacion>Block de notas</nombre_aplicacion>
+      <ruta>c:\windows\notepad.exe</ruta>
+      <clase></clase>
+      <divisora></divisora>
+      <unificadora></unificadora>
+      <tiempo_ensistema>2100000</tiempo_ensistema>
+      <periodo_confirmacion>2100000</periodo_confirmacion>
+      <umbral_espera>2100000</umbral_espera>
+      <si_cambiarcompu>false</si_cambiarcompu>
+    </programa>
+    <programa>
+      <alias>explorer</alias>
+      <nombre_aplicacion>Explorador de Windows</nombre_aplicacion>
+      <ruta>c:\windows\explorer.exe</ruta>
+      <clase>(ninguna)</clase>
+      <divisora></divisora>
+      <unificadora></unificadora>
+      <tiempo_ensistema>2100000</tiempo_ensistema>
+      <periodo_confirmacion>2100000</periodo_confirmacion>
+      <umbral_espera>2100000</umbral_espera>
+      <si_cambiarcompu>true</si_cambiarcompu>
+    </programa>
+    <programa>
+      <alias>dderive</alias>
+      <nombre_aplicacion>Derivacion de arboles de induccion</nombre_aplicacion>
+      <ruta>C:/scripts/dderive.exe</ruta>
+      <clase>mineria.MINERControlador</clase>
+      <divisora>mineria.MINERDivisoras</divisora>
+      <unificadora>mineria.MINERUnificadoras</unificadora>
+      <tiempo_ensistema>2100000</tiempo_ensistema>
+      <periodo_confirmacion>2100000</periodo_confirmacion>
+      <umbral_espera>2100000</umbral_espera>
+      <si_cambiarcompu>true</si_cambiarcompu>
+    </programa>
+  </programas>
+	<politicas>
+		<!-- pesos para la capacidad de la compu (tipo 0) -->
+		<umbral><nombre>PESO0_MICRO</nombre><valor>0.55</valor></umbral>
+		<umbral><nombre>PESO0_RAM</nombre><valor>0.25</valor></umbral>
+		<umbral><nombre>PESO0_DISCO</nombre><valor>0.10</valor></umbral>
+		<umbral><nombre>PESO0_VECINAS</nombre><valor>0.10</valor></umbral>
+		<!-- parametros para la capacidad de la compu (tipo 0) -->
+		<umbral><nombre>PARM0_FACTOR_ARQ</nombre><valor>1.75</valor></umbral>
+		<umbral><nombre>PARM0_RELOJ_BASE</nombre><valor>400</valor></umbral>
+		<umbral><nombre>PARM0_MEM_BASE</nombre><valor>128</valor></umbral>
+		<umbral><nombre>PARM0_DISCO_BASE</nombre><valor>1024</valor></umbral>
+		<umbral><nombre>PARM0_VECINAS_BASE</nombre><valor>4</valor></umbral>
+		<!-- pesos para la carga funcional (tipo 1) -->
+		<umbral><nombre>PESO1_CARGA</nombre><valor>0.50</valor></umbral>
+		<umbral><nombre>PESO1_VECINAS_USADAS</nombre><valor>0.10</valor></umbral>
+		<umbral><nombre>PESO1_MEM_LIBRE</nombre><valor>0.30</valor></umbral>
+		<umbral><nombre>PESO1_DISCO_LIBRE</nombre><valor>0.10</valor></umbral>
+		<!-- parametros para la carga funcional (tipo 1) -->
+		<umbral><nombre>PARM1_PROM_CARGA_MAX</nombre><valor>0.50</valor></umbral>
+		<umbral><nombre>PARM1_MEM_LIBRE_MIN</nombre><valor>0.30</valor></umbral>
+		<umbral><nombre>PARM1_DISCO_LIBRE_MIN</nombre><valor>0.30</valor></umbral>
+		<!-- pesos para la carga de aplicacion (tipo 2) -->
+		<umbral><nombre>PESO2_MAYOR</nombre><valor>0.70</valor></umbral>
+		<umbral><nombre>PESO2_MENOR</nombre><valor>0.30</valor></umbral>
+		<!-- parametro para la carga de aplicacion (tipo 2) -->
+		<umbral><nombre>PARM2_AJUSTE</nombre><valor>1.00</valor></umbral>
+		<!-- otros de políticas -->
+		<umbral><nombre>LECTOR_INTERVALO_S</nombre><valor>120.0</valor></umbral>
+		<umbral><nombre>HIDRO_UMBRAL</nombre><valor>0.5</valor></umbral>
+	</politicas>
+</valores_locales>

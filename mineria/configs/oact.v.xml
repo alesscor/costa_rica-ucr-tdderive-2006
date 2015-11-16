@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<distribuidor>
+  <oact>
+    <puerto>5510</puerto>
+    <intervalo>100000</intervalo>
+    <con_bitacora>true</con_bitacora>
+    <puerto_bitacora>4412</puerto_bitacora>
+  </oact>
+</distribuidor>

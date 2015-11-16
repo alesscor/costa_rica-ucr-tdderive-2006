@@ -1,0 +1,1 @@
+java.exe -classpath C:\MyProjects\eclipse\corabitas\bin;C:\MyProjects\eclipse\aco\bin;C:\MyProjects\eclipse\mens\bin;C:\MyProjects\eclipse\lib\xml4j.jar;C:\MyProjects\eclipse\tdutils\bin;C:\MyProjects\eclipse\lib\xerces.jar;C:\MyProjects\eclipse\tables\bin corabitas.CORAServidor config.txt

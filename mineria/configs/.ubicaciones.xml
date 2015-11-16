@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<mensaje>
+  <ubicaciones>
+    <ubicanodo>
+      <nombre>001mx.1</nombre>
+      <direccion>192.168.0.1</direccion>
+    </ubicanodo>
+    <ubicanodo>
+      <nombre>compa</nombre>
+      <direccion>192.168.0.3</direccion>
+    </ubicanodo>
+    <ubicanodo>
+      <nombre>refor</nombre>
+      <direccion>192.168.0.2</direccion>
+    </ubicanodo>
+  </ubicaciones>
+  <enlaces>
+    <enlace>
+      <nodo1id>compa</nodo1id>
+      <nodo2id>001mX.1</nodo2id>
+      <peso>1.02</peso>
+      <espera>13000</espera>
+    </enlace>
+    <enlace>
+      <nodo1id>refor</nodo1id>
+      <nodo2id>001mX.1</nodo2id>
+      <peso>1.04</peso>
+      <espera>20000</espera>
+    </enlace>
+  </enlaces>
+</mensaje>

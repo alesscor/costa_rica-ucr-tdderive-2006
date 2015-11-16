@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<solicitud>
+  <className>admin.ADMINSolicitudInvocacion</className>
+  <servantName>sol. abstracta</servantName>
+  <contenido>
+    <solicitud>
+      <id_tarea></id_tarea>
+      <alias>tdderive</alias>
+      <si_local>false</si_local>
+      <parametros>notepad
+.ubicaciones.xml
+      </parametros>
+      <retorno></retorno>
+      <ambiente>
+      </ambiente>
+      <archivos>
+      </archivos>
+      <directorio></directorio>
+      <esperar></esperar>
+    </solicitud>
+  </contenido>
+</solicitud>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="../mens/bin;../tables/bin;../aco/bin;../admin/bin;../lib/mineria.jar;../lib/hsqldb.jar;../orgainfo/bin;../corabitas/bin;../lib/xml4j.jar;../lib/xerces.jar;../oact/bin;../tdutils/bin" destdir="" doctitle="Proyecto TDDERIVE 2006 - Universidad de Costa Rica" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" overview="V:\tdderive\eclipse.fin.tesis\docs\tdderive-resumen.html" packagenames="tdutils,aco,oact,mens,corabitas,admin,tables,orgainfo,mineria" source="1.5" sourcepath="../corabitas/src;../mineria/src;../orgainfo/src;../oact/src;../tdutils/src;../mens/src;../tables/src;../aco/src;../admin/src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

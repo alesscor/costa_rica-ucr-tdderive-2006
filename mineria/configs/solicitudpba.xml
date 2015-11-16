@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<solicitud>
+  <id_tarea></id_tarea>
+  <alias>notepad</alias>
+  <parametros>algo.txt</parametros>
+  <retorno>alesscor@ieee.org</retorno>
+  <ambiente>
+  </ambiente>
+  <parametros>
+    <archivo1>nombre1<si_local>true</si_local></archivo1>
+    <archivo2>nombre2</archivo2>
+    <archivo3>nombre3<bloque>nombre3</bloque></archivo3>
+    <archivo4>nombre4<bloque>nombre3</bloque></archivo4>
+    <archivo5>nombre5<bloque>nombre3</bloque></archivo5>
+    <archivo6>nombre6<si_local>true</si_local></archivo6>
+  </parametros>
+  <directorio></directorio>
+  <esperar></esperar>
+</solicitud>
