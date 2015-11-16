@@ -1,5 +1,10 @@
 # `tdderive` - Resumen técnico
 
+Desarrollo inicial de un sistema  distribuido débilmente acoplado  llamado  `tdderive`,  el  cual  se  encarga  de  planificar  el  procesamiento paralelo  de  uno  o  varios  trabajos  de  minería  de  datos.  Aunque  el  proyecto inicialmente  propicia  la  planificación  distribuida  de  una  aplicación  de  minería  de datos particular, llamada `dderive`, ofrece la capacidad de favorecer el procesamiento de cualquier aplicación o servicio cuyos trabajos se puedan dividir en subtrabajos de ejecución paralela.
+
+Palabras clave: *middleware*, concurrencia, planificación, sistemas distribuidos, arquitectura de software, *java*
+
+
 Objetivos:
 
 * Facilitar  el  procesamiento  distribuido  y  paralelo  a  aplicaciones  de comportamiento  incremental  sobre  un  ambiente  débilmente  acoplado  y heterogéneo, dentro de una red de área local o de área extensa.
