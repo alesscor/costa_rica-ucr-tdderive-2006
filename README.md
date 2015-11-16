@@ -79,7 +79,7 @@ hidrodinámico  (no  implementado),  difusión  iniciada  por  el  receptor  de tr
 - Ejecución  remota:  Sin  migración  de  procesos  y  realizada  en  ambientes heterogéneos,  está  basada  en  la  creación  anticipada  del  ambiente  que pertenece a una aplicación para su posterior ejecución remota, teniendo el control sobre su terminación remota.
 - Modelos de  ejecución remota base:  `NEST`,  `UTOPIA` y  `BALANCE`. De  `NEST` se aprovechó  la  estructura  de  la  identificación  de  procesos  para  ser independientes de la ubicación; de  `UTOPIA` y  `BALANCE` se aprovechó la especificación de su arquitectura para poder estructurar la arquitectura del sistema.
 
-Tareas por hacer:
+### Tareas por hacer:
 
 - Probar al servidor `tdderive` con una aplicación que le introduzca ráfagas controladas de tareas de tiempo de procesamiento bien pronosticable.
 - Activar  la  comunicación  entre  los  componentes  del  servidor `balanceador` y  `planificador`, para llevar a cabo  el balance de carga hidrodinámico.
